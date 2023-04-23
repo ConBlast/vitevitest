@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+import { suma } from './src/components/chadComponent.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -21,4 +22,8 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
+console.log(suma(2, 3)); // Esto debería dar 5 en la consola
+
+
 setupCounter(document.querySelector('#counter'))
+
